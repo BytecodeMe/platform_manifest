@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+  <remote  name="github"
+           fetch="git://github.com/" />
   <default revision="master"
            remote="aosp"
            sync-j="4" />
@@ -401,6 +403,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-10.2"/>
 
 </manifest>
 
